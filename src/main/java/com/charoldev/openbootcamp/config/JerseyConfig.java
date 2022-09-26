@@ -5,10 +5,10 @@ import org.springframework.stereotype.Component;
 
 import javax.ws.rs.ApplicationPath;
 
-@ApplicationPath("/")
+@ApplicationPath("/api")
 @Component
 public class JerseyConfig extends ResourceConfig {
     public JerseyConfig() {
-        this.packages("com.charoldev.openbootcamp.rest");
+        this.packages("com.charoldev.openbootcamp.controllers");
     }
 }
